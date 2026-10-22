@@ -1,0 +1,22 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+.env
+.cache/
+*.txt
+*.json
+*.xlsx
+*.csv
+constants.py
+
+# Keep dependency manifest tracked despite the *.txt rule above
+!requirements.txt
+
+# Local config, state and temp files
+config.toml
+downloads/
+.ytpod.lock
+state.tmp

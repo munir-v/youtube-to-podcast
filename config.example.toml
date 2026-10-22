@@ -1,0 +1,12 @@
+# YouTube playlist to turn into a podcast. It must be public or unlisted.
+playlist_url = "https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID"
+feed_title = "YouTube Queue"
+retention_days = 7
+
+# Cloudflare R2. The access keys live in the macOS Keychain (see README.md), not here.
+account_id = ""
+bucket = ""
+public_base_url = ""  # the bucket's public r2.dev URL, e.g. https://pub-xxxx.r2.dev
+
+# Random path prefix that keeps the feed URL unguessable. Changing it breaks the Pocket Casts subscription.
+feed_token = ""  # generate with: python3 -c 'import secrets; print(secrets.token_urlsafe(18))'
